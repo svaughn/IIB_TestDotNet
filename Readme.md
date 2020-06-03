@@ -1,3 +1,5 @@
+This was just working through the YouTube video **WebSphere Message Broker V8 .NET integration** (https://www.youtube.com/watch?v=gHFHbm9jhNU&t=41s)
+
 The YouTube was about:
 * WebSphere Message Broker V8 
 * Microsoft Visual Studio 2010
