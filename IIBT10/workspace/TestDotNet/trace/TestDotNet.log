@@ -1,0 +1,76 @@
+
+########2020-06-03 16:37:06.840608 ##########################
+
+Integration Node: TESTNODE_steve  Version: 100020  Platform: WINDOWS ProcessID: 4364  IntegrationNodeUserId: SYSTEM IntegrationServer: default
+
+Message Flow: TestDotNet
+
+NodeLabel: TESTDONTNET.IN out Trace
+
+Root: ( ['MQROOT' : 0x13998b07c60]
+  (0x01000000:Name  ):Properties = ( ['MQPROPERTYPARSER' : 0x13998efda10]
+    (0x03000000:NameValue):MessageSet             = '' (CHARACTER)
+    (0x03000000:NameValue):MessageType            = '' (CHARACTER)
+    (0x03000000:NameValue):MessageFormat          = '' (CHARACTER)
+    (0x03000000:NameValue):Encoding               = 273 (INTEGER)
+    (0x03000000:NameValue):CodedCharSetId         = 437 (INTEGER)
+    (0x03000000:NameValue):Transactional          = TRUE (BOOLEAN)
+    (0x03000000:NameValue):Persistence            = FALSE (BOOLEAN)
+    (0x03000000:NameValue):CreationTime           = GMTTIMESTAMP '2020-06-03 20:37:06.830' (GMTTIMESTAMP)
+    (0x03000000:NameValue):ExpirationTime         = -1 (INTEGER)
+    (0x03000000:NameValue):Priority               = 0 (INTEGER)
+    (0x03000000:NameValue):ReplyIdentifier        = X'000000000000000000000000000000000000000000000000' (BLOB)
+    (0x03000000:NameValue):ReplyProtocol          = 'MQ' (CHARACTER)
+    (0x03000000:NameValue):Topic                  = NULL
+    (0x03000000:NameValue):ContentType            = '' (CHARACTER)
+    (0x03000000:NameValue):IdentitySourceType     = '' (CHARACTER)
+    (0x03000000:NameValue):IdentitySourceToken    = '' (CHARACTER)
+    (0x03000000:NameValue):IdentitySourcePassword = '' (CHARACTER)
+    (0x03000000:NameValue):IdentitySourceIssuedBy = '' (CHARACTER)
+    (0x03000000:NameValue):IdentityMappedType     = '' (CHARACTER)
+    (0x03000000:NameValue):IdentityMappedToken    = '' (CHARACTER)
+    (0x03000000:NameValue):IdentityMappedPassword = '' (CHARACTER)
+    (0x03000000:NameValue):IdentityMappedIssuedBy = '' (CHARACTER)
+  )
+  (0x01000000:Name  ):MQMD       = ( ['MQHMD' : 0x13998daaa50]
+    (0x03000000:NameValue):SourceQueue      = 'TESTDOTNET.IN' (CHARACTER)
+    (0x03000000:NameValue):Transactional    = TRUE (BOOLEAN)
+    (0x03000000:NameValue):Encoding         = 273 (INTEGER)
+    (0x03000000:NameValue):CodedCharSetId   = 437 (INTEGER)
+    (0x03000000:NameValue):Format           = '        ' (CHARACTER)
+    (0x03000000:NameValue):Version          = 2 (INTEGER)
+    (0x03000000:NameValue):Report           = 0 (INTEGER)
+    (0x03000000:NameValue):MsgType          = 8 (INTEGER)
+    (0x03000000:NameValue):Expiry           = -1 (INTEGER)
+    (0x03000000:NameValue):Feedback         = 0 (INTEGER)
+    (0x03000000:NameValue):Priority         = 0 (INTEGER)
+    (0x03000000:NameValue):Persistence      = 0 (INTEGER)
+    (0x03000000:NameValue):MsgId            = X'414d51205445535420202020202020204591d75e23222f05' (BLOB)
+    (0x03000000:NameValue):CorrelId         = X'000000000000000000000000000000000000000000000000' (BLOB)
+    (0x03000000:NameValue):BackoutCount     = 0 (INTEGER)
+    (0x03000000:NameValue):ReplyToQ         = '                                                ' (CHARACTER)
+    (0x03000000:NameValue):ReplyToQMgr      = 'TEST                                            ' (CHARACTER)
+    (0x03000000:NameValue):UserIdentifier   = '            ' (CHARACTER)
+    (0x03000000:NameValue):AccountingToken  = X'0000000000000000000000000000000000000000000000000000000000000000' (BLOB)
+    (0x03000000:NameValue):ApplIdentityData = '                                ' (CHARACTER)
+    (0x03000000:NameValue):PutApplType      = 0 (INTEGER)
+    (0x03000000:NameValue):PutApplName      = '                            ' (CHARACTER)
+    (0x03000000:NameValue):PutDate          = DATE '2020-06-03' (DATE)
+    (0x03000000:NameValue):PutTime          = GMTTIME '20:37:06.830' (GMTTIME)
+    (0x03000000:NameValue):ApplOriginData   = '    ' (CHARACTER)
+    (0x03000000:NameValue):GroupId          = X'000000000000000000000000000000000000000000000000' (BLOB)
+    (0x03000000:NameValue):MsgSeqNumber     = 1 (INTEGER)
+    (0x03000000:NameValue):Offset           = 0 (INTEGER)
+    (0x03000000:NameValue):MsgFlags         = 0 (INTEGER)
+    (0x03000000:NameValue):OriginalLength   = -1 (INTEGER)
+  )
+  (0x01000000:Folder):XMLNSC     = ( ['xmlnsc' : 0x13998cbbeb0]
+    (0x03000000:PCDataField):Message = 'This time for sure bulwinkle' (CHARACTER)
+  )
+)
+
+Local Environment: 
+
+Environment: 
+
+ExceptionList: 

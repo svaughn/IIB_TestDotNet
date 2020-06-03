@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <MQInputMessage timestamp="1591205061905" nodeId="FCMComposite_1_1" name="what a wonderful world" id="1591205061905-77">
+        <plainText>%3CMessage%3Ewhat+a+wonderful+world%3C%2FMessage%3E</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+    <MQInputMessage timestamp="1591216583978" nodeId="FCMComposite_1_1" name="This time for sure bulwinkle" id="1591216583978-371">
+        <plainText>%3CMessage%3EThis+time+for+sure+bulwinkle%3C%2FMessage%3E</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+</MessagePool>

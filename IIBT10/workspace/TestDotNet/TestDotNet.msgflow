@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmDotNetCompute.msgnode="ComIbmDotNetCompute.msgnode" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ComIbmTrace.msgnode="ComIbmTrace.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="TestDotNet.msgflow" nsPrefix="TestDotNet.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="TestDotNet" bundleName="TestDotNet" pluginId="TestDotNet"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/TestDotNet/icons/full/obj16/TestDotNet.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/TestDotNet/icons/full/obj30/TestDotNet.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="10,25" queueName="TESTDOTNET.IN" destinationQueueManagerName="TEST" messageDomainProperty="XMLNSC" validateTiming="complete" parserXmlnscUseForXmlnsDomain="true">
+        <translation xmi:type="utility:ConstantString" string="TESTDOTNET.IN"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="516,236" queueName="TESTDOTNET.OUT" destinationQueueManagerName="TEST">
+        <translation xmi:type="utility:ConstantString" string="TESTDOTNET.OUT"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="676,20" queueName="TESTDOTNET.ERROR" destinationQueueManagerName="TEST">
+        <translation xmi:type="utility:ConstantString" string="TESTDOTNET.ERROR"/>
+      </nodes>
+      <nodes xmi:type="ComIbmDotNetCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="386,128" assemblyName="C:\Users\steve\Documents\Visual Studio 2015\Projects\TestDotNet\TestDotNet\bin\Debug\TestDotNet.dll">
+        <translation xmi:type="utility:ConstantString" string=".NETCompute"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="543,128" destination="file" filePath="C:\Users\steve\IBM\IIBT10\workspace\TestDotNet\trace\TestDotNet.log" pattern="########${CURRENT_TIMESTAMP} ##########################&#xD;&#xA;&#xD;&#xA;Integration Node: ${BrokerName}  Version: ${BrokerVersion}  Platform: ${Family} ProcessID: ${ProcessId}  IntegrationNodeUserId: ${BrokerUserId} IntegrationServer: ${ExecutionGroupLabel}&#xD;&#xA;&#xD;&#xA;Message Flow: ${MessageFlowLabel}&#xD;&#xA;&#xD;&#xA;NodeLabel: ${NodeLabel}&#xD;&#xA;&#xD;&#xA;Root: ${Root}&#xD;&#xA;&#xD;&#xA;Local Environment: ${LocalEnvironment}&#xD;&#xA;&#xD;&#xA;Environment: ${Environment}&#xD;&#xA;&#xD;&#xA;ExceptionList: ${ExceptionList}">
+        <translation xmi:type="utility:ConstantString" string=".NETTrace"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="429,18" destination="file" filePath="C:\Users\steve\IBM\IIBT10\workspace\TestDotNet\trace\TestDotNet.log" pattern="########${CURRENT_TIMESTAMP} ##########################&#xD;&#xA;&#xD;&#xA;Integration Node: ${BrokerName}  Version: ${BrokerVersion}  Platform: ${Family} ProcessID: ${ProcessId}  IntegrationNodeUserId: ${BrokerUserId} IntegrationServer: ${ExecutionGroupLabel}&#xD;&#xA;&#xD;&#xA;Message Flow: ${MessageFlowLabel}&#xD;&#xA;&#xD;&#xA;NodeLabel: ${NodeLabel}&#xD;&#xA;&#xD;&#xA;Root: ${Root}&#xD;&#xA;&#xD;&#xA;Local Environment: ${LocalEnvironment}&#xD;&#xA;&#xD;&#xA;Environment: ${Environment}&#xD;&#xA;&#xD;&#xA;ExceptionList: ${ExceptionList}">
+        <translation xmi:type="utility:ConstantString" string="TESTDOTNET.IN Failure trace"/>
+      </nodes>
+      <nodes xmi:type="ComIbmTrace.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="159,128" destination="file" filePath="C:\Users\steve\IBM\IIBT10\workspace\TestDotNet\trace\TestDotNet.log" pattern="########${CURRENT_TIMESTAMP} ##########################&#xD;&#xA;&#xD;&#xA;Integration Node: ${BrokerName}  Version: ${BrokerVersion}  Platform: ${Family} ProcessID: ${ProcessId}  IntegrationNodeUserId: ${BrokerUserId} IntegrationServer: ${ExecutionGroupLabel}&#xD;&#xA;&#xD;&#xA;Message Flow: ${MessageFlowLabel}&#xD;&#xA;&#xD;&#xA;NodeLabel: ${NodeLabel}&#xD;&#xA;&#xD;&#xA;Root: ${Root}&#xD;&#xA;&#xD;&#xA;Local Environment: ${LocalEnvironment}&#xD;&#xA;&#xD;&#xA;Environment: ${Environment}&#xD;&#xA;&#xD;&#xA;ExceptionList: ${ExceptionList}">
+        <translation xmi:type="utility:ConstantString" string="TESTDONTNET.IN out Trace"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>
