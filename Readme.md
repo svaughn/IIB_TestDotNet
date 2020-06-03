@@ -13,7 +13,7 @@ Warning	1	There was a mismatch between the processor architecture of the project
 
 I tried Microsoft Visual Studio 2019 
 when I ran IBM Broker DotNet.VSIX (see https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bc34203_.html),
-I recived the following error:
+I received the following error:
 ```
 Install Failed
 The install for  'IBM Integration Templates' was not successful for all the selected products
